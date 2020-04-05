@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Agri Info </title>
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+    <style type="text/css">
+        .jumbotron {
+            background-image: url(../static/images/1.jpg);
+            background-repeat: no-repeat;
+            height: 541px;
+            background-repeat: no-repeat;
+            background-color: #ffffff;
+            background-attachment: fixed;
+            background-position: top center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .mapdiv {
+            width: 23%;
+            margin-left: auto;
+            margin-bottom: 200px;
+        }
+
+        body {
+            padding-top: 56px;
+        }
+
+        .mapdiv path {
+            fill: #cc1100;
+            stroke: #dece0c;
+            stroke-width: 4px;
+            transition: fill 0.3s;
+        }
+
+        .mapdiv :hover {
+            fill: #000;
+        }
+
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: darkgray;
+        }
+
+        .nounderline {
+            text-decoration: none !important
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Agri Info</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('contact') }}">Login</a></li>
+                    <li><a href="{{ url_for('contact') }}">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        {% block content %}{% endblock %}
+        <hr />
+
+        <div class="footer">
+            <footer class="py-1 bg-dark">
+                <div class="container">
+                    <p class="m-0 text-center text-white" style="color: white;">&copy; {{ year }} - Agri info</p>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+
+
+        <script src="/static/scripts/jquery-1.10.2.js"></script>
+        <script src="/static/scripts/bootstrap.js"></script>
+        <script src="/static/scripts/respond.js"></script>
+        {% block scripts %}{% endblock %}
+
+</body>
+</html>
