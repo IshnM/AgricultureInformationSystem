@@ -42,7 +42,17 @@
     <Folder Include="AgricultureInformationSystem\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgricultureInformationSystem\static\content\bootstrap.css.map" />
+    <Content Include="AgricultureInformationSystem\static\content\bootstrap.min.css.map" />
+    <Content Include="AgricultureInformationSystem\static\content\heroic-features.css" />
     <Content Include="AgricultureInformationSystem\static\images\1.jpg" />
+    <Content Include="AgricultureInformationSystem\static\scripts\bootstrap.bundle.js" />
+    <Content Include="AgricultureInformationSystem\static\scripts\bootstrap.bundle.js.map" />
+    <Content Include="AgricultureInformationSystem\static\scripts\bootstrap.bundle.min.js" />
+    <Content Include="AgricultureInformationSystem\static\scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="AgricultureInformationSystem\static\scripts\bootstrap.js.map" />
+    <Content Include="AgricultureInformationSystem\static\scripts\bootstrap.min.js.map" />
+    <Content Include="AgricultureInformationSystem\templates\login.html" />
     <Content Include="requirements.txt" />
     <Content Include="AgricultureInformationSystem\static\content\bootstrap.css" />
     <Content Include="AgricultureInformationSystem\static\content\bootstrap.min.css" />
