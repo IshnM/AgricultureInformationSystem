@@ -11,6 +11,7 @@ app.config['SECRET_KEY'] = '\x81I\xcb\xef\x10\xbb\xe5\xa5\xfdP\x17_\xdf2\x10\xe2
 #Database URL
 app.config["SQLALCHEMY_DATABASE_URL"]='postgresql://postgres:123@localhost:5432/Aginfo'
 db=SQLAlchemy(app)
+#Email Configaration
 
 
 
